@@ -1,0 +1,10 @@
+# Xcode
+
+## OS X
+.DS_Store
+
+## Various settings
+xcuserdata
+
+## Project Key
+Key/

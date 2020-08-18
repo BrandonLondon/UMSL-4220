@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Dyr-ZY-417">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Detail View Controller-->
+        <scene sceneID="E87-YR-ZjS">
+            <objects>
+                <viewController id="Dyr-ZY-417" customClass="DetailViewController" customModule="Pokédex" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ftx-yW-5Mx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nTZ-Ob-Kv0">
+                                <rect key="frame" x="0.0" y="44" width="414" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="chB-Zs-1jH"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6kg-RA-0Ah">
+                                <rect key="frame" x="80" y="269.5" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Kc-Xq-7wo" customClass="RoundButton" customModule="ObjectLibrary">
+                                <rect key="frame" x="100" y="752" width="214" height="60"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="ym0-nD-ImD"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="play.fill" catalog="system"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="playButtonTapped:" destination="Dyr-ZY-417" eventType="touchUpInside" id="kmb-S1-kme"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NJe-u5-0DB">
+                                <rect key="frame" x="80" y="199" width="42" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Ecy-1Q-lDQ" firstAttribute="trailing" secondItem="nTZ-Ob-Kv0" secondAttribute="trailing" id="1Qk-SV-m7o"/>
+                            <constraint firstItem="6kg-RA-0Ah" firstAttribute="top" secondItem="NJe-u5-0DB" secondAttribute="bottom" constant="50" id="BkX-7I-nSw"/>
+                            <constraint firstItem="1Kc-Xq-7wo" firstAttribute="leading" secondItem="Ecy-1Q-lDQ" secondAttribute="leading" constant="100" id="LV0-5G-oIk"/>
+                            <constraint firstItem="NJe-u5-0DB" firstAttribute="leading" secondItem="Ecy-1Q-lDQ" secondAttribute="leading" constant="80" id="MBL-Yj-ePb"/>
+                            <constraint firstItem="Ecy-1Q-lDQ" firstAttribute="trailing" secondItem="1Kc-Xq-7wo" secondAttribute="trailing" constant="100" id="NtU-he-Ccc"/>
+                            <constraint firstItem="nTZ-Ob-Kv0" firstAttribute="leading" secondItem="Ecy-1Q-lDQ" secondAttribute="leading" id="T4d-LS-sAA"/>
+                            <constraint firstItem="nTZ-Ob-Kv0" firstAttribute="top" secondItem="Ecy-1Q-lDQ" secondAttribute="top" id="WhU-TB-Zlr"/>
+                            <constraint firstItem="NJe-u5-0DB" firstAttribute="top" secondItem="nTZ-Ob-Kv0" secondAttribute="centerY" constant="80" id="jTk-N2-Ehm"/>
+                            <constraint firstItem="Ecy-1Q-lDQ" firstAttribute="bottom" secondItem="1Kc-Xq-7wo" secondAttribute="bottom" constant="50" id="l3j-xJ-f8J"/>
+                            <constraint firstItem="1Kc-Xq-7wo" firstAttribute="centerX" secondItem="Ecy-1Q-lDQ" secondAttribute="centerX" id="ogA-PX-KTc"/>
+                            <constraint firstItem="6kg-RA-0Ah" firstAttribute="leading" secondItem="Ecy-1Q-lDQ" secondAttribute="leading" constant="80" id="pf6-al-Wcd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ecy-1Q-lDQ"/>
+                    </view>
+                    <connections>
+                        <outlet property="lblHeight" destination="NJe-u5-0DB" id="ubh-8h-9dy"/>
+                        <outlet property="lblType" destination="6kg-RA-0Ah" id="Nvc-8U-LXV"/>
+                        <outlet property="pokémonPic" destination="nTZ-Ob-Kv0" id="i7H-wB-b02"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vNB-oL-KUg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="124.6376811594203" y="122.54464285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="play.fill" catalog="system" width="58" height="64"/>
+    </resources>
+</document>
